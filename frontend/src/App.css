@@ -1,0 +1,111 @@
+/* Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Root */
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Body */
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+
+  background: #0B1120;
+
+  color: white;
+
+  font-family:
+    Inter,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+
+  overflow-x: hidden;
+}
+
+/* Links */
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #111827;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00E5FF;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #38BDF8;
+}
+
+/* Dashboard Animation */
+
+@keyframes fadeIn {
+
+  from {
+
+    opacity: 0;
+    transform: translateY(20px);
+
+  }
+
+  to {
+
+    opacity: 1;
+    transform: translateY(0px);
+
+  }
+
+}
+
+/* Card Animation */
+
+@keyframes glow {
+
+  from {
+
+    box-shadow:
+      0 0 10px rgba(0, 229, 255, 0.10);
+
+  }
+
+  to {
+
+    box-shadow:
+      0 0 25px rgba(0, 229, 255, 0.25);
+
+  }
+
+}
+
+/* Smooth Page Rendering */
+
+.page-fade {
+
+  animation:
+    fadeIn 0.8s ease;
+
+}
